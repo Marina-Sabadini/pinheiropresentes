@@ -1,0 +1,329 @@
+.review-form-dialog {
+  width: 620px;
+}
+#review-form {
+  display: grid;
+  gap: 12px;
+}
+#review-form > label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+#review-form input:not([type="radio"]),
+#review-form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--muted);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 12px;
+  font: inherit;
+}
+#review-form textarea {
+  resize: vertical;
+}
+.input-hint {
+  font-size: 0.76rem;
+}
+.ornament-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.ornament-colors label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+  min-height: 48px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.color-sample {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #555;
+}
+.gold {
+  background: #e9a338;
+}
+.green {
+  background: #93bf80;
+}
+.blue {
+  background: #bcd4de;
+}
+.form-error {
+  padding: 12px;
+  border: 2px solid var(--ink);
+  font-size: 0.85rem;
+}
+/* A composição original de cards forma o pinheiro. O movimento fica no bilhete. */
+.tree-toolbar {
+  max-width: 1020px;
+  margin: 32px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.tree-toolbar .text-link {
+  font-size: 0.85rem;
+}
+.review-tree {
+  margin-top: 18px;
+}
+.tree-cards {
+  gap: 24px 16px;
+  perspective: 1200px;
+  align-items: stretch;
+}
+.review-card {
+  position: relative;
+  min-width: 0;
+  min-height: 225px;
+  transform-origin: 50% 0;
+  transition:
+    box-shadow 0.18s,
+    translate 0.18s;
+}
+.review-card:hover {
+  translate: 0 -3px;
+  box-shadow: 0 10px 20px #203a2514;
+}
+.review-card:has(.card-action:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 5px;
+}
+.review-card:nth-child(n + 4):has(.card-action:focus-visible) {
+  outline: 3px solid var(--focus);
+  box-shadow: 0 0 0 2px var(--paper);
+}
+.review-card h3 {
+  font-size: 1.15rem;
+}
+.review-card p {
+  font-size: 0.84rem;
+}
+.review-card .card-quote {
+  margin: 4px 0 0;
+  font: 400 0.94rem/1.65 var(--font-body);
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.review-card .card-source {
+  font-size: 0.76rem;
+  margin-top: auto;
+  padding-top: 12px;
+}
+.comment-card {
+  --pin: #f0be65;
+}
+.comment-card[data-color="verde"] {
+  --pin: #a5d4a0;
+}
+.comment-card[data-color="azul"] {
+  --pin: #bcd4de;
+}
+.comment-card::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 6px);
+  width: 12px;
+  height: 23px;
+  border: 3px solid var(--pin);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px #0003;
+  pointer-events: none;
+}
+.card-action {
+  margin-top: auto;
+  align-self: flex-start;
+  min-height: 44px;
+  font: 700 0.82rem/1.5 var(--font-body);
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  background: none;
+  padding: 8px 0;
+}
+.card-action::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 42px 7px 42px 7px;
+}
+.card-action:focus-visible {
+  outline: none;
+}
+.review-action {
+  flex-wrap: wrap;
+  gap: 12px 26px;
+}
+.review-disclosure {
+  font-size: 0.84rem;
+}
+.local-notice {
+  max-width: 650px;
+}
+.tree-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  font-size: 0.85rem;
+}
+.review-tree.is-list {
+  max-width: 760px;
+}
+.review-tree.is-list .tree-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.review-tree.is-list .review-card {
+  width: 100%;
+  margin: 0;
+  min-height: 0;
+}
+.review-tree.is-list .card-quote {
+  display: block;
+  overflow: visible;
+}
+.review-tree.is-list :is(.tree-top, .tree-trunk, .tree-root) {
+  display: none;
+}
+.review-detail-dialog {
+  width: 680px;
+  padding: 0;
+  transform-origin: 0 0;
+}
+.review-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 2;
+  background: var(--paper);
+}
+.review-reading {
+  padding: 64px 40px 36px;
+  min-width: 0;
+  border-top: 7px solid #e0b158;
+}
+.review-detail-dialog[data-color="verde"] .review-reading {
+  border-top-color: #8ebd7f;
+}
+.review-detail-dialog[data-color="azul"] .review-reading {
+  border-top-color: #93b7c8;
+}
+.review-reading h2 {
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.review-reading blockquote {
+  font: 400 1.1rem/1.75 var(--font-display);
+  white-space: pre-wrap;
+  margin: 24px 0 30px;
+}
+.review-detail-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+#delete-confirm {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+#delete-confirm .button {
+  margin-top: 12px;
+}
+html:is([data-contrast="claro"], [data-contrast="escuro"])
+  .review-card:nth-child(n) {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+html:is([data-contrast="claro"], [data-contrast="escuro"])
+  .comment-card::before {
+  border-color: var(--ink);
+}
+html[data-large-text="true"] .review-card:nth-child(n) {
+  width: 100%;
+  margin: 0;
+}
+html[data-motion="reduce"] .review-card:hover {
+  translate: none;
+}
+html:not(.js) :is(.review-tree, #tree-instructions) {
+  display: none;
+}
+@media (max-width: 740px) {
+  .tree-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tree-cards .review-card:nth-child(n) {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 24px;
+  }
+  .review-card .card-quote {
+    display: block;
+    overflow: visible;
+  }
+  .tree-top {
+    height: 45px;
+  }
+  .review-reading {
+    padding: 65px 24px 28px;
+  }
+  .review-reading h2 {
+    font-size: 1.65rem;
+  }
+  .review-action {
+    flex-direction: column;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .review-card:hover {
+    translate: none;
+  }
+}
+@media print {
+  .invitation-card,
+  .card-action,
+  .tree-toolbar,
+  .review-action,
+  .tree-pagination {
+    display: none !important;
+  }
+  .tree-cards {
+    display: block;
+  }
+  .review-card:nth-child(n) {
+    width: 100%;
+    break-inside: avoid;
+    margin: 16px 0;
+  }
+  .review-card .card-quote {
+    display: block;
+    overflow: visible;
+  }
+}

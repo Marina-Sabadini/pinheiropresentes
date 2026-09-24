@@ -1,0 +1,91 @@
+/* Extensões noturnas da paleta do PDF; nenhuma cor oficial é substituída. */
+html[data-theme="escuro"] {
+  --pine-night-top: #344e2c;
+  --pine-night-middle: #283e23;
+  --pine-night-base: #1b2d1b;
+}
+html[data-theme="escuro"] .review-card:nth-child(1) {
+  background: var(--pine-night-top);
+  color: #f1f4eb;
+  border-color: #77956a;
+}
+html[data-theme="escuro"] .review-card:nth-child(2),
+html[data-theme="escuro"] .review-card:nth-child(3) {
+  background: var(--pine-night-middle);
+  color: #f1f4eb;
+  border-color: #66855b;
+}
+html[data-theme="escuro"] .review-card:nth-child(n + 4) {
+  background: var(--pine-night-base);
+  color: #f1f4eb;
+  border-color: #5c7654;
+}
+/* No scroll, conserva as famílias verde, azul e laranja, em fundos de baixa luz. */
+html[data-theme="escuro"]:not([data-contrast="claro"]):not(
+    [data-contrast="escuro"]
+  )
+  .site-header {
+  background: color-mix(in srgb, var(--scene-color) 62%, var(--paper));
+}
+.brand {
+  position: relative;
+}
+.logo-snow {
+  position: absolute;
+  inset: 0 9% 28%;
+  overflow: hidden;
+  pointer-events: none;
+  contain: paint;
+}
+.snow-grain {
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fffefb;
+  opacity: 0;
+  pointer-events: none;
+}
+.review-tree {
+  position: relative;
+}
+.night-lights {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+.night-light {
+  position: absolute;
+  color: #f3c78d;
+  font-size: 13px;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  text-shadow: 0 0 6px #f0870033;
+}
+html:not([data-theme="escuro"]) :is(.logo-snow, .night-lights),
+html[data-motion="reduce"] :is(.logo-snow, .night-lights),
+html:is([data-contrast="claro"], [data-contrast="escuro"])
+  :is(.logo-snow, .night-lights) {
+  display: none;
+}
+html:is([data-contrast="claro"], [data-contrast="escuro"])
+  .review-card:nth-child(n) {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-snow,
+  .night-lights {
+    display: none;
+  }
+}
+@media print {
+  .logo-snow,
+  .night-lights {
+    display: none !important;
+  }
+}
