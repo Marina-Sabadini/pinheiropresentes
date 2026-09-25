@@ -45,7 +45,7 @@ window.LOJA = {
         "Peças para o cotidiano, incluindo sutiãs, calcinhas e cuecas. Consulte tamanhos, cores e modelos com a Amália.",
       imagem: "imagens/sutia.jpeg",
       alt: "Foto de teste: três gatinhos juntos no jardim.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
     {
       id: "maquiagem",
@@ -67,7 +67,7 @@ window.LOJA = {
         "Bolsas, garrafas e copos térmicos e outros presentes para diferentes momentos. Converse com a Amália para encontrar uma opção para você.",
       imagem: "imagens/presentes.jpeg",
       alt: "Foto de teste: dois filhotes de gato, um deles olhando para a câmera.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
     {
       id: "banho",
@@ -78,7 +78,7 @@ window.LOJA = {
         "Artigos de cama, mesa e banho para cuidar da casa. Consulte opções de toalhas, tapetes, almofadas e cobre-leitos disponíveis na loja.",
       imagem: "imagens/toalhas.jpeg",
       alt: "Foto de teste: um gatinho cinza e branco sentado na grama.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
   ],
   // Somente avaliações reais, com autorização para publicação.
