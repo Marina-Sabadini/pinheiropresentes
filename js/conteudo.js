@@ -22,7 +22,7 @@ window.LOJA = {
       descricao:
         "Lençóis e jogos de cama para deixar seu quarto mais acolhedor. Converse com a Amália para conhecer os modelos, tecidos e medidas disponíveis.",
       imagem: "imagens/fronhas.jpeg",
-      alt: "Foto de teste: um gatinho cinza e branco sentado na grama.",
+      alt: "Sete lençóis de diferentes tamanhos e estampas.",
       imagemTeste: false,
     },
     {
@@ -33,7 +33,7 @@ window.LOJA = {
       descricao:
         "Fragrâncias para o dia a dia e para presentear. A Amália pode ajudar você a escolher e informar as marcas e opções disponíveis.",
       imagem: "imagens/perfumaria.jpeg",
-      alt: "Foto de teste: um grupo de filhotes de gato sobre a grama.",
+      alt: "Diversas embalagens de perfume, de diferentes marcas.",
       imagemTeste: false,
     },
     {
@@ -44,7 +44,7 @@ window.LOJA = {
       descricao:
         "Peças para o cotidiano, incluindo sutiãs, calcinhas e cuecas. Consulte tamanhos, cores e modelos com a Amália.",
       imagem: "imagens/sutia.jpeg",
-      alt: "Foto de teste: três gatinhos juntos no jardim.",
+      alt: "O mesmo modelo de sutiã em quatro cores.",
       imagemTeste: false,
     },
     {
@@ -55,7 +55,7 @@ window.LOJA = {
       descricao:
         "Itens de maquiagem para completar seus cuidados. Pergunte à Amália quais produtos e tonalidades estão disponíveis.",
       imagem: "imagens/maquiagem.jpeg",
-      alt: "Foto de teste: três filhotes de gato entre flores e folhas.",
+      alt: "Maquiagens, a maioria são batons.",
       imagemTeste: false,
     },
     {
@@ -66,7 +66,7 @@ window.LOJA = {
       descricao:
         "Bolsas, garrafas e copos térmicos e outros presentes para diferentes momentos. Converse com a Amália para encontrar uma opção para você.",
       imagem: "imagens/presentes.jpeg",
-      alt: "Foto de teste: dois filhotes de gato, um deles olhando para a câmera.",
+      alt: "Uma caixa de presente vermelha com perfumes dentro.",
       imagemTeste: false,
     },
     {
@@ -77,7 +77,7 @@ window.LOJA = {
       descricao:
         "Artigos de cama, mesa e banho para cuidar da casa. Consulte opções de toalhas, tapetes, almofadas e cobre-leitos disponíveis na loja.",
       imagem: "imagens/toalhas.jpeg",
-      alt: "Foto de teste: um gatinho cinza e branco sentado na grama.",
+      alt: "Três toalhas de banho.",
       imagemTeste: false,
     },
   ],
