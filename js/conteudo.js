@@ -21,9 +21,9 @@ window.LOJA = {
       resumo: "Um convite para descansar bem.",
       descricao:
         "Lençóis e jogos de cama para deixar seu quarto mais acolhedor. Converse com a Amália para conhecer os modelos, tecidos e medidas disponíveis.",
-      imagem: "imagens/Teste1.jpg",
+      imagem: "imagens/fronhas.jpeg",
       alt: "Foto de teste: um gatinho cinza e branco sentado na grama.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
     {
       id: "perfumes",
@@ -32,9 +32,9 @@ window.LOJA = {
       resumo: "Um cheirinho que fica na memória.",
       descricao:
         "Fragrâncias para o dia a dia e para presentear. A Amália pode ajudar você a escolher e informar as marcas e opções disponíveis.",
-      imagem: "imagens/Teste2.jpg",
+      imagem: "imagens/perfumaria.jpeg",
       alt: "Foto de teste: um grupo de filhotes de gato sobre a grama.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
     {
       id: "roupas",
@@ -54,9 +54,9 @@ window.LOJA = {
       resumo: "Seu momento de se cuidar.",
       descricao:
         "Itens de maquiagem para completar seus cuidados. Pergunte à Amália quais produtos e tonalidades estão disponíveis.",
-      imagem: "imagens/Teste4.jpg",
+      imagem: "imagens/maquiagem.jpeg",
       alt: "Foto de teste: três filhotes de gato entre flores e folhas.",
-      imagemTeste: true,
+      imagemTeste: false,
     },
     {
       id: "presentes",
